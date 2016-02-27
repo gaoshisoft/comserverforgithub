@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MbeClient.TcpChannelClient">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAYIAgAAAAAAIAAAAAAAAAAIAACAIAAIAEAA=</HashCode>
+      <FileName>TcpChannelclient.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbeClient.TCPChannel">
+    <Position X="7" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AECAg0ACEEAAAAAAAAAQAAAQAgABAAIAAAQIAAgCAAQ=</HashCode>
+      <FileName>TCPChannel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbeClient.TCPChannels">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIBAAAAAAAAgBAAAAIAJAQEEEAgAEIAMAAEAAAAAAg=</HashCode>
+      <FileName>TCPChannels.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MbeClient.TcpWsk">
+    <Position X="2.5" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>IABAABEAAIAAAAAAAAAAAEAAASAAABAQAAIIRAAAAJA=</HashCode>
+      <FileName>Wsk.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GPRSComServer.CItem" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAGCAggAkIAAAFAwgEMACIACQAAAAsgQTAASAkgAIA=</HashCode>
+      <FileName>OPCfunc\CItem.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GPRSComServer.frmOpc" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CInABqUAACIiIEAIAiCWSKJaAgAAIBAAghogDgyPBUs=</HashCode>
+      <FileName>OPCfunc\frmopcMain.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GPRSComServer.IItem">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAgAAgAAAAAAABAAABEAAAA=</HashCode>
+      <FileName>OPCfunc\IItem.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GPRSComServer.opcItemview">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEABAGAECAgAAAAAACQBCADAAAAABAAAEAAAAAABAA=</HashCode>
+      <FileName>OPCfunc\opcItemview.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GPRSComServer.OPCserver">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAAAAAAAABAAAAgAAACgAAAAAIAAACAAAAQAA=</HashCode>
+      <FileName>OPCfunc\OPCserver.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GPRSComServer._IItem" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>OPCfunc\IItem.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Module Name="GPRSComServer.KOS_Module">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAnAEAAABAAAAAAGAAAAAAAAAAAAAABAAgAAAAAAAAA=</HashCode>
+      <FileName>OPCfunc\KOS_Module.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

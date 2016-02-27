@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ExinDSC.cDSC">
+    <Position X="1.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAIAoAAAIAgAAIAZAAAAAgAACAAAAAAACgACCAAA=</HashCode>
+      <FileName>cDSC.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mvarConlineDtus" />
+      <Field Name="_tcpSocket" />
+      <Field Name="DSC" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ExinDSC.ConlineDTU">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIIYAAAACBAAAACQAAAAQAkgCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConlineDTU.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mvarWinSock" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ExinDSC.ConlineDtus">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgKAAAAAAEAAAhACAAAABwQEAEAAAAAgIAAAAAQAAAA=</HashCode>
+      <FileName>ConlineDtus.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mCol" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ExinDSC.FrmSocket">
+    <Position X="5.25" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QIEAQAEAECAAAAAAAgCAgACCABAAAAAAAAAAYACAIUE=</HashCode>
+      <FileName>frmSocket.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="myLisener" />
+      <Field Name="DSC" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="ConnCol" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ExinDSC.MyWinSockClient">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAIAAAAAAAAAAAEAAAAAAABAQAAkIAAAAABA=</HashCode>
+      <FileName>MyWinSock.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExinDSC.MyWinSockListener" Collapsed="true">
+    <Position X="8.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAEAAAAAMAAAAAgAAAwAAkAAAAABBA=</HashCode>
+      <FileName>MyWinSock.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.VisualBasic.Collection">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

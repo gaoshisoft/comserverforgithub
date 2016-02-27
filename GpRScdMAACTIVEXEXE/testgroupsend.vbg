@@ -1,0 +1,3 @@
+VBGROUP 5.0
+StartupProject=..\HongKongsoft\GPRS通讯服务器.vbp
+Project=DscServer.vbp

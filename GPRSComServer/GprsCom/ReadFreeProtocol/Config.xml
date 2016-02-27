@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!-- 读天信流量计的配置文件-->
+<Stations>
+  <TXFlowMeter StationName="Sta1" MBAD="201" PhoneNumber="13804126691" PollTime="5" TimeOut="15" Enable="1">
+    <DTBlock BlockName="Block1" MeterAddr="2" Enable="True"/>
+    <DTBlock BlockName="Block2" MeterAddr="1" Enable="True"/>
+    
+  </TXFlowMeter>
+  
+  
+</Stations>

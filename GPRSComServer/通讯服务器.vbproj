@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99B2B972-C41E-450D-9D7F-141469B33942}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>GPRSComServer</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>0</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>Exin</AssemblyCompanyName>
+    <RootNamespace>GPRSComServer</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <ApplicationIcon>gprs.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>95D5FD42F1C07B44DBD7D14080BE6F65AF91F480</ManifestCertificateThumbprint>
+    <ManifestKeyFile>GPRS通讯服务器_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <OptionExplicit>On</OptionExplicit>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/GPRSComServer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>Win32=True</DefineConstants>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisLogFile>bin\GPRSComServer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>Win32=True</DefineConstants>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42105,42106,42107,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisLogFile>bin\GPRSComServer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.0.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="DBfunc\cOracle.vb" />
+    <Compile Include="DTU.vb" />
+    <Compile Include="GprsCom\DataBlock\HZCDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\HZHHDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\TXCpuCardDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\CNDataBlock.vb" />
+    <Compile Include="GprsCom\ComRecord.Designer.vb">
+      <DependentUpon>ComRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GprsCom\ComRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GprsCom\DataBlock\CorusDBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\DW64DataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\DWDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\XiXiangData.vb" />
+    <Compile Include="GprsCom\DataServerCenter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\DtNode\GeneralDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\TJWJXDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\DWDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\LDDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\CSDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\XKDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\CNDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\TXDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\MRDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\MBTCPDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\DtNode.vb" />
+    <Compile Include="GprsCom\DtNode\RTUDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\CorusDtNode.vb" />
+    <Compile Include="GprsCom\DtNode\Dw64DtNode.vb" />
+    <Compile Include="GprsCom\DtNode\XiXiangDtNode.vb" />
+    <Compile Include="GprsCom\DataBlock\MRDataBlock.vb" />
+    <Compile Include="GprsCom\OnlineDtu.Designer.vb">
+      <DependentUpon>OnlineDtu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GprsCom\OnlineDtu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GprsCom\IGPRSRTU.vb" />
+    <Compile Include="GprsCom\DataBlock\TXDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\IDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\XKDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\LDDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\CSDataBlock.vb" />
+    <Compile Include="MainProg\frmAbout.designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GprsCom\DataBlock\MBTCPDataBlock.vb" />
+    <Compile Include="MainProg\frmopcsvrnameset.Designer.vb">
+      <DependentUpon>frmopcsvrnameset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\frmopcsvrnameset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdlFuncTools.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="OPCfunc\BatchGen.Designer.vb">
+      <DependentUpon>BatchGen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCfunc\BatchGen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\cFilter.vb" />
+    <Compile Include="OPCfunc\DelegateCallBack.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="OPCfunc\CItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBfunc\CManipulateAccess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBfunc\cManipulateMysql.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBfunc\cManipulateSQLsvr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainProg\comquality.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>comquality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\comquality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBfunc\Ctable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBfunc\ctables.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\DataBlock\DataBlock.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\DataBlock\DataBlocks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\Dataserverinterface.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBfunc\DBconnect.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\Fconfig.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Fconfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GprsCom\Fconfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProg\frmByteqty.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmByteqty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\frmByteqty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProg\frmConnstatequery.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmConnstatequery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\frmConnstatequery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBfunc\frmDBsave.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmDBsave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DBfunc\frmDBsave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\frmopcMain.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmopcMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCfunc\frmopcMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GprsCom\frmportion.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmportion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GprsCom\frmportion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemGetSetData.vb" />
+    <Compile Include="TcpSocket\DoComWork.vb" />
+    <Compile Include="TcpSocket\TCPsocket.Designer.vb">
+      <DependentUpon>TCPsocket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TcpSocket\TCPsocket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFunc\frmUsermana.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmUsermana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserFunc\frmUsermana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iffirst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\IItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBfunc\Itable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\Item.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCfunc\Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\ItemCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainProg\fview.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>fview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\fview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProg\MDIFmain.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>MDIFmain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProg\MDIFmain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moddeclare.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mytimer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\opcItemview.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>opcItemview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPCfunc\opcItemview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPCfunc\OPCserver.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\RTU.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\RTUs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserFunc\user.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GprsCom\Wsk.vb" />
+    <EmbeddedResource Include="GprsCom\ComRecord.resx">
+      <DependentUpon>ComRecord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GprsCom\OnlineDtu.resX">
+      <DependentUpon>OnlineDtu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\comquality.resX">
+      <DependentUpon>comquality.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GprsCom\Fconfig.resX">
+      <DependentUpon>Fconfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\frmAbout.resX">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\frmByteqty.resX">
+      <DependentUpon>frmByteqty.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\frmConnstatequery.resX">
+      <DependentUpon>frmConnstatequery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBfunc\frmDBsave.resX">
+      <DependentUpon>frmDBsave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\frmopcsvrnameset.resx">
+      <DependentUpon>frmopcsvrnameset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCfunc\BatchGen.resx">
+      <DependentUpon>BatchGen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCfunc\frmopcMain.resX">
+      <DependentUpon>frmopcMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GprsCom\frmportion.resX">
+      <DependentUpon>frmportion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TcpSocket\TCPsocket.resX">
+      <DependentUpon>TCPsocket.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFunc\frmUsermana.resX">
+      <DependentUpon>frmUsermana.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCfunc\Item.resX">
+      <DependentUpon>Item.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\fview.resX">
+      <DependentUpon>fview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProg\MDIFmain.resX">
+      <DependentUpon>MDIFmain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPCfunc\opcItemview.resX">
+      <DependentUpon>opcItemview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\CDLL5.dll" />
+    <Content Include="bin\Config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\GPRSDLL.DLL" />
+    <Content Include="bin\gprs_dll.dll" />
+    <Content Include="bin\inpout32.dll" />
+    <Content Include="bin\KOSRDK.dll" />
+    <Content Include="gprs.ico" />
+    <Content Include="GPRS通讯服务器.sdm" />
+    <Content Include="OPCfunc\class_opcDll.cs" />
+    <None Include="app.config" />
+    <Compile Include="GprsCom\DataBlock\TJWJXDataBlock.vb" />
+    <Compile Include="GprsCom\DataBlock\SXHTDBlock.vb" />
+    <None Include="GPRS通讯服务器_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="OPCfunc\opcfuncClass.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>True</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChannelcommDSC\ChannelcommDSC.vbproj">
+      <Project>{293866AB-9845-40CA-96D7-3372DD980871}</Project>
+      <Name>ChannelcommDSC</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\ExinTcpDsc\ExinDSC.vbproj">
+      <Project>{CF84DBB8-C29E-4F5E-A05F-06AB78A0CEFB}</Project>
+      <Name>ExinDSC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HDDsc\HDDSC.vbproj">
+      <Project>{56472EB3-0F9E-4D20-B167-B7DB1AA12F30}</Project>
+      <Name>HDDSC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MBsrv\MBsrv.vbproj">
+      <Project>{C18A6A63-377E-4B45-8638-3586E64222CC}</Project>
+      <Name>MBsrv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OPCSvr.NET\OPCSvr.vbproj">
+      <Project>{8E9E5756-CAC1-478A-8B32-C101273766DA}</Project>
+      <Name>OPCSvr</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

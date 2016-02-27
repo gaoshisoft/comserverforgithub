@@ -1,0 +1,140 @@
+Option Strict Off
+Option Explicit On
+
+
+
+Namespace SCommDSC
+
+    Public Class ScommWsk
+        Implements IComm
+
+
+        Private WithEvents sp As System.IO.Ports.SerialPort
+        '处理真正的通讯工作
+
+
+        Private _mstate As Boolean
+        Private _mErrmsg As String
+
+
+
+        Private Sub mscommWsk_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) _
+            Handles sp.DataReceived
+            Dim inputdata() As Byte
+            Dim rvLength As Integer
+
+            Try
+                inputdata = Text.ASCIIEncoding.ASCII.GetBytes(sp.ReadExisting)
+                rvLength = inputdata.GetLength(0)
+                RaiseEvent DataArrival(inputdata, rvLength)
+
+            Catch ex As SystemException
+            End Try
+        End Sub
+
+        Public Sub New(ByVal commInfo As String)
+            'Comminfo 内容
+            '13610983709
+            '192.168.1.2:80 或 192.168.1.2:80(192.168.1.3:90)  后者是冗余通信的 通信标识 格式
+            'COM1:9600,8,n,1
+            Me.Comminfo = commInfo
+            sp = New IO.Ports.SerialPort
+            Dim st() As String
+            st = commInfo.Split(":")(1).Split(",")
+
+            sp.BaudRate = st(0)
+            sp.DataBits = st(1)
+            Dim P As Int16
+            Select Case st(2)
+                Case "n"
+                    P = 0
+                Case "o"
+                    P = 1
+                Case "e"
+                    P = 2
+
+            End Select
+            sp.Parity = P
+            sp.StopBits = st(3)
+            sp.PortName = commInfo.Split(":")(0)
+
+            sp.WriteTimeout = 1000
+            sp.ReadTimeout = 1000
+        End Sub
+
+        Protected Overrides Sub Finalize()
+
+            sp.Close()
+            'Sp.Finalize()
+        End Sub
+
+
+        Public Sub CloseMe() Implements IComm.CloseMe
+
+
+            If sp.IsOpen = True Then
+                sp.Close()
+            End If
+        End Sub
+
+        Public Property Comminfo() As String Implements IComm.Comminfo
+
+        Public Sub ConnectTo() Implements IComm.ConnectTo
+
+            Try
+                
+
+
+                sp.Open()
+
+
+                _mstate = True
+            Catch ex As Exception
+
+                _mstate = False
+                _mErrmsg = ex.Message
+            Finally
+
+            End Try
+        End Sub
+
+        Public Event DataArrival(ByRef mValue As Object, ByRef bytesTotal As Integer) Implements IComm.DataArrival
+
+        Public Sub SendData(ByVal data As Object) Implements IComm.SendData
+            Try
+
+                Dim d() As Byte
+                'If CommandBuffer.Count() >= 1 Then
+                d = data
+                'CommandBuffer.Remove(1)
+
+                If sp.IsOpen = False Then
+                    sp.Open()
+                End If
+
+                sp.Write(d, 0, d.Length)
+
+
+                'End If
+            Catch ex As Exception
+            End Try
+           
+        End Sub
+
+        Public ReadOnly Property State As Boolean Implements IComm.State
+            Get
+
+
+                State = _mstate
+            End Get
+        End Property
+
+        Public Property ErrMsg As String Implements IComm.ErrMsg
+            Get
+                ErrMsg = _mErrmsg
+            End Get
+            Set(ByVal value As String)
+            End Set
+        End Property
+    End Class
+End Namespace

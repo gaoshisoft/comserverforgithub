@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/gsp/AppData/Local/Microsoft/VisualStudio/10.0/Extensions/Microsoft/Visualization and Modeling Feature Pack/1.0/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
+  <Message Timestamp="2015-06-30T23:00:17" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Byte' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC' -  (Package)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::IChannel' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC' -  (Package)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel' -  (Class)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::__ENCList' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_KeyStr' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_mcomminfo' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_mcommstate' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_mtimeout' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_mvarChannelName' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_mvarChannelState' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::_mWsk' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::ChannelId' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::ChannelName' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::ChannelState' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Comminfo' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Comstate' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::DataArrival' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::DataArrivalEvent' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Init' -  (Operation)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Init::theChannelName' -  (Parameter)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Init::thecomminfo' -  (Parameter)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::KeyStr' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::mWsk' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::mWsk_DataArrival' -  (Operation)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::mWsk_DataArrival::bytesTotal' -  (Parameter)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::mWsk_DataArrival::mValue' -  (Parameter)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::SendByteData' -  (Operation)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::SendByteData::data' -  (Parameter)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Timeout' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel::Wsk' -  (Property)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::ChannelcommDSC::SCommDSC::ScommWsk' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::DataArrivalEventHandler' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;WeakReference&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::ChannelcommDSC::SCommDSC::SCommChannel to ModelingProject1::ChannelcommDSC::IChannel (InterfaceRealization)" />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="High" Text="(7) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-06-30T23:01:46" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
